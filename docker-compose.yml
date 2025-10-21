@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  ml:
+    build: ./ml
+    container_name: ml_container
+    volumes:
+      - ml_models:/app/models
+      
+volumes:
+  ml_models:
